@@ -1,9 +1,31 @@
+Skip to content
+IvanZammarrelli
+/
+github-secrets
+
+Type / to search
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+CI/CD Pipeline
+Update 3main.yml #5
+Jobs
+Run details
+Workflow file for this run
+.github/workflows/2main.yml at 641d47e
 name: CI/CD Pipeline
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -26,3 +48,4 @@ jobs:
 
     - name: Use API Key
       run: echo "SECRET_API_KEY=${{ secrets.SECRET_API_KEY }}" >> $GITHUB_ENV
+Update 3main.yml · IvanZammarrelli/github-secrets@641d47e 
